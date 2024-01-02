@@ -1,0 +1,54 @@
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background: #ff1100;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+
+input {
+    border-radius: 0.3em;
+    padding: 0.3em;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: solid 1px black;
+    width: 100px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+.lead{
+  padding: 20px;
+  text-align: center;
+}
+
+.box{
+  max-width:500px;
+  width:100%;
+  margin: 130px auto;
+  padding: 20px;
+  background:#fff;
+  text-align: center;
+}
+
+.count-size{
+  font-size:3rem;
+  font-weight: bold;
+  color: #252C8C;
+}

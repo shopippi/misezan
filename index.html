@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	
+    <title>見せ算電卓</title>
+</head>
+<body>
+    <h1 style="text-align: center;">見せ算計算プログラム/ver1.1</h1>
+    <p style="text-align: center;">	M1グランプリ2023の最終決戦でさや香が行ったネタ</p>
+    <div style="text-align: center;">
+        <input id="a" type="number"> 見せ <input id="b" type="number">
+        <button onclick=calculate() class="btn">計算</button>
+		
+        <div>
+            <h3>眼は...</h3>
+            <p id="answer">0</p>
+            <h3>計算過程</h3>
+            <p id="process"></p>
+        </div>
+    </div>
+
+
+    <div style="text-align: center; margin-top: 0.5em;">
+        <h2>見せ算のやり方</h2>
+        <h3>基本編</h3>
+        <p>a 見せ b のとき、</p>
+        <p>
+            ① a = b なら気まずくて両方逃げ出すので眼は 0。<br>
+            ② a > b なら b が怖気づいて逃げるので眼は a。<br>
+            ③ a < b なら a が怖気づいて逃げるので眼は b。
+        </p>
+        <h3>応用編1</h3>
+        <p>a 見せ b のとき、</p>
+        <p>
+            ④ a, b のどちらかが2、もう一方が5なら<br>生き別れの兄弟と勘違いして近寄るが、全然違って驚き、<br>携帯（小数点）を落とすので眼は 1.1。<br><br>
+            ⑤ a, b のどちらかた6、もう一方が9なら<br>生き別れの兄弟と勘違いして近寄るため、眼は 11。
+        </p>
+
+		<h3>応用編2</h3>
+        <p>a 見せ b がmin(a,b)==1かつmax(a,b)>100のとき、</p>
+        <p>
+            ⑥あまりにも人数差がありもう逃げても仕方ないとmin(a,b)が<br>腹をくくってmax(a,b)に立ち向かい17人倒すため。
+			<br><br>
+			⑦残ったmax(a,b)-17人の中にすごく美人な女性がいた場合<br>その女性がmin(a,b)を介抱したことをきっかけに<br>二人は恋に落ちやがて結婚して子供が一人生まれるため。<br>max(a,b)-17+1(大学院生レベル)
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+	
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+</body>
+</html>
